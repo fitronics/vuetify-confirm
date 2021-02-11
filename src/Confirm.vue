@@ -1,5 +1,5 @@
 <template>
-  <v-dialog eager @input="change" value="true" :max-width="width" :persistent="persistent" @keydown.esc="choose(false)">
+  <v-dialog eager @input="change" value="true" :max-width="width" :persistent="persistent" @keydown.esc="choose(false)" attach=".v-application">
     <v-card tile>
       <v-toolbar v-if="Boolean(title)" dark :color="color" dense flat>
         <v-icon v-if="Boolean(icon)" left>{{ icon }}</v-icon>
